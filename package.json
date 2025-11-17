@@ -1,0 +1,11 @@
+{
+  "name": "hashmap-exercise",
+  "version": "1.0.0",
+  "description": "HashMap implementation exercise",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "author": "javiermondine",
+  "license": "MIT"
+}
