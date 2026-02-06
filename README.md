@@ -1,32 +1,27 @@
-# Hashmap
+# HashMap
 
-Implementación en JavaScript de un HashMap simple con manejo de colisiones (buckets con arrays), rehashing (doblar capacidad) y un HashSet extra para crédito adicional.
+A HashMap implementation in JavaScript with collision handling and automatic rehashing.
 
-Características:
-- Función hash con `%` dentro del loop para evitar overflow en keys largas.
-- Buckets: arreglo de arrays, cada bucket almacena pares [key, value].
-- Redimensionamiento automático cuando size/capacity > loadFactor (por defecto 0.75).
+## Features
 
-Métodos implementados:
-- set(key, value)
-- get(key)
-- has(key)
-- remove(key)
-- length()
-- clear()
-- keys()
-- values()
-- entries()
+- Hash function with collision handling using buckets
+- Automatic resizing when load factor exceeds 0.75
+- HashSet bonus implementation included
 
-Extra:
-- `HashSet` (usa internamente `HashMap`) con `add`, `has`, `remove`, `clear`, `size`, `values`.
+## Methods
 
-Prueba rápida:
+- `set(key, value)` - Add or update entry
+- `get(key)` - Retrieve value
+- `has(key)` - Check if key exists
+- `remove(key)` - Delete entry
+- `length()` - Number of entries
+- `clear()` - Remove all entries
+- `keys()` - Get all keys
+- `values()` - Get all values
+- `entries()` - Get all key-value pairs
+
+## Usage
 
 ```bash
 node main.js
 ```
-
-Esto ejecutará un conjunto de pruebas que comprueban la inserción, sobrescritura, rehashing y demás métodos.
-
-Nota: Para simplificar el ejercicio las claves deben ser strings.
